@@ -21,11 +21,11 @@ export default function Index() {
       <Banner />
 
       <Section1 />
-      {/* <Condo/> */}
 
       <Section2 />
+      {/* <Condo/> */}
 
-      {/* <div> <Section3/></div> */}
+      <Section3 />
       <Footer />
     </div>
   );
