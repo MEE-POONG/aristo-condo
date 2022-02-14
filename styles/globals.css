@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Della+Respira&family=Josefin+Sans:wght@700&display=swap');
 html,
 body {
   padding: 0;
@@ -13,4 +18,166 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.font-header{
+  font-family: 'DM Serif Display', serif;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  left: 26px;
+  top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .bm-burger-button {
+    width: 26px;
+    height: 20px;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #b68239;
+  right: 0;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #b68239;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+
+
+/* General sidebar styles */
+.bm-menu {
+  background: #001a46;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+
+}
+.bg-menu {
+  background: #001a46;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b68239;
+  padding: 0.8em;
+}
+.golds {
+  background-color: #b68239;
+}
+.sim {
+  background-color: #001a46;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.pp {
+  min-height: 70vh;
+}
+.bgn {
+  background-image: url(/image/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40%;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: 80vh;
+  z-index: 0;
+
+}
+
+.font-head {
+  font-family: 'Della Respira', serif;
+  font-size: xx-large;
+}
+@media screen and (max-width: 600px) {
+  .font-head {
+    font-size: small;
+  }
+
+}
+
+.text-gold {
+  color: #b68239;
+}
+.text-sim {
+  color: #001a46;
+}
+.bg-tabs {
+  background-color: #001a46;
+}
+.hot{
+  text-align: -webkit-center;
+}
+.border-golds{
+  border-bottom-color: #b68239;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+.max-jor
+{
+  max-width: 95rem;
+}
+.us{
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-family: 'Della Respira', serif;
+}
+@media screen and (max-width: 600px) {
+  .us{
+
+    font-size: large;
+
+  }
+}
+.bg-all{
+  background-color: #f3f5f3;
+}
+text-kim{
+  color: #595859;
+}
+.font-footer{
+  letter-spacing: 3px;
+  font-family: 'Della Respira', serif;
+}
+.bg-condo{
+ background-image: url(/Image/room-16.jpg);
+ background-repeat: no-repeat;
+ background-size:cover;
+ min-width: 100%;
+
 }
