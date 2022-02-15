@@ -8,6 +8,7 @@ import Section3 from "../components/section-3";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Condo from "../components/condo";
+import Progess from "../components/progess";
 export default function Index() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -21,11 +22,12 @@ export default function Index() {
       <Banner />
 
       <Section1 />
-
-      <Section2 />
-      {/* <Condo/> */}
-
       <Section3 />
+      <Section2 />
+    
+
+    
+      <Progess/>
       <Footer />
     </div>
   );

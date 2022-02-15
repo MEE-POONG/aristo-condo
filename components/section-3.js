@@ -15,7 +15,7 @@ export default function Section3() {
     <div>
       <section className="  min-h-0  pt-3 lg:pt-6  pb-6">
         <div className="font-head text-center uppercase font-extrabold  m-2">
-          <span className="text-gold mr-2 lg:mr-8 my-12 ">R O O M T Y P E</span>
+          <span className="text-gold mr-2 lg:mr-8 my-12 ">P L A N S</span>
           {/* <span className="text-gold shadow-lg"> P L A N S </span> */}
         </div>
         <div className="mx-auto max-w-xs lg:max-w-4xl  golds h-0.5  w-full rounded-lg my-6"></div>
