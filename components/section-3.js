@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import SimpleImageSlider from "react-simple-image-slider";
+import { Dropdown } from "bootstrap";
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
-  
+  const [selectRoom, setSelectRoom] = useState();
+
+  // console.log(selectRoom);
+
   return (
     <div>
       <section className="  min-h-0  pt-3 lg:pt-6  pb-6">
@@ -74,49 +78,36 @@ export default function Section3() {
                     className="hidden lg:block"
                   >
                     {" "}
-                    <Image src='/Image/room-6.jpg' width={1024} height={576}/>
+                    <Image src="/Image/room-6.jpg" width={950} height={576} />
                   </div>
                   <div className=" block lg:hidden">
                     {" "}
-                    <Image src='/Image/room-6.jpg' width={1024} height={576}/>
+                    <Image src="/Image/room-6.jpg" width={950} height={576} />
                   </div>
                 </div>
               </div>
             </div>
             <div className={openTab === 2 ? "block" : "hidden"} id="link2">
               <div className="grid grid-cols-1  gap-6  mx-auto max-w-xs lg:max-w-screen-xl place-items-center   ">
-                
                 <div className="col-span-1 mt-4 lg:mt-0">
-                <div className="border-2 w-auto bg-white z-10 absolute right-56 m-2">
-                  <select>
-                    <option>
-                    ROOM TYPE 1
-                    </option>
-                    <option>
-                    ROOM TYPE 2
-                    </option>
-                    <option>
-                    ROOM TYPE 3
-                    </option>
-                    <option>
-                    ROOM TYPE 4
-                    </option>
-                    <option>
-                    ROOM TYPE 5
-                    </option>
-                  </select>
-                </div>
-                  <div
-                    data-aos="fade-up"
-                    data-aos-duration="3800"
-                    className="hidden lg:block"
-                  >
-                    <Image src='/Image/room-8.jpg' width={950} height={576}/>
+                  <div className="border-2 w-auto bg-white z-10 absolute right-56 m-2">
+                    <select className="">
+                      <option>room type 1</option>
+                      <option>room type 2</option>
+                      <option>room type 3</option>
+                      <option>room type 4</option>
+                      <option>room type 5</option>
+                    </select>
                   </div>
 
-                  <div className=" block lg:hidden" >
-                    {" "}
-                    <Image src='/Image/room-7.jpg' width={950} height={576}/>
+                  <div className={selectRoom === 1} id="room1">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="3800"
+                      className="hidden lg:block"
+                    >
+                      <Image src="/Image/room-8.jpg" width={950} height={576} />
+                    </div>
                   </div>
                 </div>
               </div>
