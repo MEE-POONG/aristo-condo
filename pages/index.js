@@ -22,7 +22,7 @@ export default function Index() {
         <Header />
       </div>
       <Banner />
-      <Concept />
+      <Concept/>
       <Section1 />
       <Section3 />
       <Section2 />
