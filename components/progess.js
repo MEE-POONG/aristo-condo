@@ -11,10 +11,10 @@ export default function Progess() {
               Project Progress{" "}
             </div>
           </div>
-          <div className=" mx-auto max-w-3xl grid grid-cols-12  ">
+          <div className=" mx-auto max-w-3xl grid grid-cols-12 gap-6 ">
             <div className="col-span-4">
               <div className="progress ">
-                <span className="title timer text-pro us">0%</span>
+                <span className="title timer  persec text-pro  ">0%</span>
                 <div className="overlay"></div>
                 <div className="left"></div>
                 <div className="right"></div>

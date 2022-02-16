@@ -363,3 +363,15 @@ text-kim {
 .text-per{
   color: #D4D5D5;
 }
+.persec {
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-family: "Della Respira", serif;
+}
+@media screen and (max-width: 600px) {
+  .persec {
+    font-size: 20px;
+    position: relative;
+    bottom: 55px;
+  }
+}
