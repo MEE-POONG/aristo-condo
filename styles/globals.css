@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Della+Respira&family=Josefin+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Della+Respira&family=Josefin+Sans:wght@700&display=swap");
 html,
 body {
   padding: 0;
@@ -21,12 +21,12 @@ a {
   box-sizing: border-box;
 }
 
-.font-header{
-  font-family: 'DM Serif Display', serif;
+.font-header {
+  font-family: "DM Serif Display", serif;
 }
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: 30px;
   left: 26px;
@@ -42,7 +42,6 @@ a {
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #b68239;
-  right: 0;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -61,14 +60,11 @@ a {
   background: #bdc3c7;
 }
 
-
-
 /* General sidebar styles */
 .bm-menu {
   background: #001a46;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
-
 }
 .bg-menu {
   background: #001a46;
@@ -118,18 +114,24 @@ a {
   width: 100%;
   height: 80vh;
   z-index: 0;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../public/Image/room-8.jpg);
+}
+@media screen and (max-width: 600px) {
+  .video {
+    height: 50vh;
+  }
 }
 
 .font-head {
-  font-family: 'Della Respira', serif;
+  font-family: "Della Respira", serif;
   font-size: xx-large;
 }
 @media screen and (max-width: 600px) {
   .font-head {
     font-size: small;
   }
-
 }
 
 .text-gold {
@@ -141,41 +143,45 @@ a {
 .bg-tabs {
   background-color: #001a46;
 }
-.hot{
+.bg-tel {
+  background-color: #D2CCBD;
+}
+.hot {
   text-align: -webkit-center;
 }
-.border-golds{
+.border-golds {
   border-bottom-color: #b68239;
   border-bottom-width: 4px;
   border-bottom-style: solid;
 }
-.max-jor
-{
+.max-jor {
   max-width: 95rem;
 }
-.us{
+.us {
   letter-spacing: 3px;
   font-size: 50px;
-  font-family: 'Della Respira', serif;
+  font-family: "Della Respira", serif;
 }
 @media screen and (max-width: 600px) {
-  .us{
-
+  .us {
     font-size: large;
-
   }
 }
-.bg-all{
+.bg-all {
   background-color: #f3f5f3;
 }
-text-kim{
+text-kim {
   color: #595859;
 }
-.font-footer{
+.font-footer {
   letter-spacing: 3px;
-  font-family: 'Della Respira', serif;
+  font-family: "Della Respira", serif;
+  color: #595959;
 }
-.bg-condo{
+.text-foot{
+  color: #595959;
+}
+.bg-condo {
   width: 100%;
   height: 100%;
   background-image: url(/Image/room-12.jpg);
@@ -183,22 +189,17 @@ text-kim{
   background-size: cover;
   z-index: -1;
 }
-.footer-text{
-  color: white;
+.footer-text {
+  color: #595959;
 }
-.footer-text :hover
-{
+.footer-text :hover {
   color: #b68239;
 }
-.banner-progess
-{
-  background-image: url(/Image/progess.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner-progess {
+  background-color: #595958;
   width: 100%;
   height: 100%;
   z-index: -1;
-  
 }
 .wrapper {
   border: 3px solid white;
@@ -208,23 +209,157 @@ text-kim{
   background-color: pink;
 }
 
-
-
 .label {
   font-size: 20px;
   color: gray;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 .sub-label {
   font-size: 60px;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .sub-label {
-    font-size: 40px
+    font-size: 40px;
   }
-  
 }
-.wow{
-  font-family: 'Kanit', sans-serif;
+.wow {
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 3px;
+  font-size: 80px;
+}
+@media screen and (max-width: 600px) {
+  .wow {
+    font-size: 40px;
+  }
+}
+.bg-concept {
+  background-image: url(/Image/progess.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.text-pro {
+  color: #b8b2ac;
+}
+
+.progress {
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  line-height: 200px;
+  margin: 20px;
+}
+@media screen and (max-width: 600px) {
+  .progress {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+  }
+}
+.progress .title {
+  position: relative;
+  z-index: 100;
+}
+
+.progress .overlay {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.progress .left,
+.progress .right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 7.5px solid #b8b2ac;
+  border-radius: 100px 100px 100px 100px;
+  border-right: 1;
+  transform-origin: right;
+}
+.progress-head {
+  font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+  .progress-head {
+    font-size: 10px;
+  }
+}
+
+.progress-sub {
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .progress-sub {
+    font-size: 8px;
+  }
+}
+
+.gray{
+  background-color: #969796;
+}
+.tel{
+  background-color: #B3AD9F;
+}
+.progressbar {
+  margin:20px auto;
+  padding:0;
+  width:90%;
+  height:5px;
+  overflow:hidden;
+  background:#969796;
+  border-radius:6px;
+}
+
+.bar1 {
+	position:relative;
+  float:left;
+  min-width:0%;
+  height:100%;
+  background:#fff;
+  width: 70%;
+}
+.bar2 {
+	position:relative;
+  float:left;
+  min-width:0%;
+  height:100%;
+  background:#fff;
+  width: 20%;
+}
+.bar3 {
+	position:relative;
+  float:left;
+  min-width:0%;
+  height:100%;
+  background:#fff;
+  width: 50%;
+}
+.percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family:tahoma,arial,helvetica;
+  font-size:12px;
+  color:white;
+}
+.text-per{
+  color: #D4D5D5;
 }
