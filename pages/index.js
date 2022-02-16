@@ -7,7 +7,6 @@ import Section2 from "../components/section-2";
 import Section3 from "../components/section-3";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Condo from "../components/condo";
 import Progess from "../components/progess";
 import Googlemap from "../components/googlemap";
 import Concept from "../components/concept";

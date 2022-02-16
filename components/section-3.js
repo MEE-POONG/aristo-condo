@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import SimpleImageSlider from "react-simple-image-slider";
-import { Dropdown } from "bootstrap";
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
   const [selectRoom, setSelectRoom] = useState();
