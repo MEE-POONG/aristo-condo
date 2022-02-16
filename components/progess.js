@@ -15,7 +15,7 @@ export default function Progess() {
             </div>
             <div className="text-center">
               <Image
-                src="/Image/progress-underline.png"
+                src="/Image/progress.png"
                 width={177}
                 height={26}
               />
