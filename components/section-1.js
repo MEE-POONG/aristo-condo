@@ -17,7 +17,7 @@ export default function Section1() {
     { url: "/Image/room-7.jpg" },
   ];
   return (
-    <div className="bg-condo p-4 lg:p-0 lg:bg-all">
+    <div className="   p-4 lg:p-0 lg:bg-all">
       <section className="min-h-0 mt-10 bg-all p-4">
         <div className="flex justify-center ">
           <button data-aos="fade-up" className="us  text-sim ">

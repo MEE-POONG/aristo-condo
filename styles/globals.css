@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Della+Respira&family=Josefin+Sans:wght@700&display=swap');
 html,
@@ -175,18 +176,55 @@ text-kim{
   font-family: 'Della Respira', serif;
 }
 .bg-condo{
- background-image: url(/Image/room-16.jpg);
- background-repeat: no-repeat;
- background-size:cover;
-
+  width: 100%;
+  height: 100%;
+  background-image: url(/Image/room-12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
-.text-sss {
-  font-size: 0.50rem/* 12px */;
-  line-height: 0.75rem/* 16px */;
+.footer-text{
+  color: white;
 }
-.border-jame {
-  border-color: #b68239;
-  border-width: 2px;
-  border-style: solid;
+.footer-text :hover
+{
+  color: #b68239;
+}
+.banner-progess
+{
+  background-image: url(/Image/progess.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+}
+.wrapper {
+  border: 3px solid white;
+}
 
+.container {
+  background-color: pink;
+}
+
+
+
+.label {
+  font-size: 20px;
+  color: gray;
+  font-family: 'Kanit', sans-serif;
+}
+.sub-label {
+  font-size: 60px;
+  font-family: 'Kanit', sans-serif;
+}
+@media screen and (max-width:600px) {
+  .sub-label {
+    font-size: 40px
+  }
+  
+}
+.wow{
+  font-family: 'Kanit', sans-serif;
 }

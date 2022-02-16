@@ -3,20 +3,19 @@ import Image from "next/image";
 import SimpleImageSlider from "react-simple-image-slider";
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
-  const images = [
-    { url: "/Image/room-1.jpg" },
-    { url: "/Image/room-2.jpg" },
-    { url: "/Image/room-3.jpg" },
-    { url: "/Image/room-4.jpg" },
-    { url: "/Image/room-5.jpg" },
-    { url: "/Image/room-6.jpg" },
-    { url: "/Image/room-7.jpg" },
+  const room1 = [
+    { url: "/Image/room-18.jpg" },
+    { url: "/Image/room-19.jpg" },
+  ];
+  const room2 = [
+    { url: "/Image/room-20.jpg" },
+    { url: "/Image/room-21.jpg" },
   ];
   return (
     <div>
       <section className="  min-h-0  pt-3 lg:pt-6  pb-6">
         <div className="font-head text-center uppercase font-extrabold  m-2">
-          <span className="text-gold mr-2 lg:mr-8 my-12 ">R O O M T Y P E</span>
+          <span className="text-gold mr-2 lg:mr-8 my-12 ">P L A N S</span>
           {/* <span className="text-gold shadow-lg"> P L A N S </span> */}
         </div>
         <div className="mx-auto max-w-xs lg:max-w-4xl  golds h-0.5  w-full rounded-lg my-6"></div>
@@ -86,7 +85,7 @@ export default function Section3() {
                     <SimpleImageSlider
                       width={896}
                       height={504}
-                      images={images}
+                      images={room1}
                       showBullets={true}
                       showNavs={true}
                       navSize={20}
@@ -102,7 +101,7 @@ export default function Section3() {
                     <SimpleImageSlider
                       width={320}
                       height={180}
-                      images={images}
+                      images={room1}
                       showBullets={true}
                       useGPURender={true}
                       showNavs={true}
@@ -128,7 +127,7 @@ export default function Section3() {
                     <SimpleImageSlider
                       width={896}
                       height={504}
-                      images={images}
+                      images={room2}
                       showBullets={true}
                       showNavs={true}
                       navSize={20}
@@ -144,7 +143,7 @@ export default function Section3() {
                     <SimpleImageSlider
                       width={320}
                       height={180}
-                      images={images}
+                      images={room2}
                       showBullets={true}
                       useGPURender={true}
                       showNavs={true}
