@@ -22,16 +22,11 @@ export default function Index() {
         <Header />
       </div>
       <Banner />
-<<<<<<< Updated upstream
-<Concept/>
-=======
-      <Concept/>
->>>>>>> Stashed changes
+      <Concept />
       <Section1 />
       <Section3 />
       <Section2 />
-      <Googlemap/>
-    
+      <Googlemap />
 
       <Progess />
       <Footer />
