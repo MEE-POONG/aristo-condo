@@ -8,6 +8,7 @@ import Section3 from "../components/section-3";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Condo from "../components/condo";
+import Map from "../components/map";
 export default function Index() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -24,6 +25,8 @@ export default function Index() {
 
       <Section2 />
       {/* <Condo/> */}
+      
+      <Map/>
 
       <Section3 />
       <Footer />

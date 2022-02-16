@@ -43,7 +43,7 @@ export default function Section1() {
               data-aos-duration="3600"
               className="text-xl  text-center lg:text-left text-kim"
             >
-              Lorem Ipsum has been the industry's standard dummy text ever since
+              Lorem Ipsum has been the industrys standard dummy text ever since
               the 1500s, when an unknown printer took a galley of type and
               scrambled it sss
             </div>
