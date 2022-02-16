@@ -3,14 +3,7 @@ import Image from "next/image";
 import SimpleImageSlider from "react-simple-image-slider";
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
-  const room1 = [
-    { url: "/Image/room-18.jpg" },
-    { url: "/Image/room-19.jpg" },
-  ];
-  const room2 = [
-    { url: "/Image/room-20.jpg" },
-    { url: "/Image/room-21.jpg" },
-  ];
+  
   return (
     <div>
       <section className="  min-h-0  pt-3 lg:pt-6  pb-6">
@@ -67,7 +60,6 @@ export default function Section3() {
                       <span className="ml-2"> SEE MORE</span>
                     </div>
                   </a>
-                 
                 </div>
               </div>
             </div>
@@ -82,77 +74,49 @@ export default function Section3() {
                     className="hidden lg:block"
                   >
                     {" "}
-                    <SimpleImageSlider
-                      width={896}
-                      height={504}
-                      images={room1}
-                      showBullets={true}
-                      showNavs={true}
-                      navSize={20}
-                      useGPURender={true}
-                      autoPlay={true}
-                      loop={true}
-                      slideDuration="1.2"
-                      autoPlayDelay="2"
-                    />
+                    <Image src='/Image/room-6.jpg' width={1024} height={576}/>
                   </div>
                   <div className=" block lg:hidden">
                     {" "}
-                    <SimpleImageSlider
-                      width={320}
-                      height={180}
-                      images={room1}
-                      showBullets={true}
-                      useGPURender={true}
-                      showNavs={true}
-                      navSize={20}
-                      autoPlay={true}
-                      loop={true}
-                      slideDuration="1.2"
-                      autoPlayDelay="2"
-                    />
+                    <Image src='/Image/room-6.jpg' width={1024} height={576}/>
                   </div>
                 </div>
               </div>
             </div>
             <div className={openTab === 2 ? "block" : "hidden"} id="link2">
               <div className="grid grid-cols-1  gap-6  mx-auto max-w-xs lg:max-w-screen-xl place-items-center   ">
-                <div className="col-span-1 mt-4 lg:mt-0    ">
+                
+                <div className="col-span-1 mt-4 lg:mt-0">
+                <div className="border-2 w-auto bg-white z-10 absolute right-56 m-2">
+                  <select>
+                    <option>
+                    ROOM TYPE 1
+                    </option>
+                    <option>
+                    ROOM TYPE 2
+                    </option>
+                    <option>
+                    ROOM TYPE 3
+                    </option>
+                    <option>
+                    ROOM TYPE 4
+                    </option>
+                    <option>
+                    ROOM TYPE 5
+                    </option>
+                  </select>
+                </div>
                   <div
                     data-aos="fade-up"
                     data-aos-duration="3800"
                     className="hidden lg:block"
                   >
-                    {" "}
-                    <SimpleImageSlider
-                      width={896}
-                      height={504}
-                      images={room2}
-                      showBullets={true}
-                      showNavs={true}
-                      navSize={20}
-                      useGPURender={true}
-                      autoPlay={true}
-                      loop={true}
-                      slideDuration="1.2"
-                      autoPlayDelay="2"
-                    />
+                    <Image src='/Image/room-8.jpg' width={950} height={576}/>
                   </div>
-                  <div className=" block lg:hidden">
+
+                  <div className=" block lg:hidden" >
                     {" "}
-                    <SimpleImageSlider
-                      width={320}
-                      height={180}
-                      images={room2}
-                      showBullets={true}
-                      useGPURender={true}
-                      showNavs={true}
-                      navSize={20}
-                      autoPlay={true}
-                      loop={true}
-                      slideDuration="1.2"
-                      autoPlayDelay="2"
-                    />
+                    <Image src='/Image/room-7.jpg' width={950} height={576}/>
                   </div>
                 </div>
               </div>

@@ -22,7 +22,11 @@ export default function Index() {
         <Header />
       </div>
       <Banner />
+<<<<<<< Updated upstream
 <Concept/>
+=======
+      <Concept/>
+>>>>>>> Stashed changes
       <Section1 />
       <Section3 />
       <Section2 />

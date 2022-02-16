@@ -8,7 +8,7 @@ export default function Googlemap() {
       <div className="mx-auto max-w-max">
         <div className="">
           <div className="font-head text-center font-extrabold">
-            <a data-aos="fade-up" data-aos-duration="2500" className="text-sim">
+            <a data-aos="fade-up" data-aos-duration="2500" className="text-sim" >
               <div className="">
                 <button
                   className={
