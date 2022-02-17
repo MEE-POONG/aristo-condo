@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import SimpleImageSlider from "react-simple-image-slider";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 export default function Section1() {
