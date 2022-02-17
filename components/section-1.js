@@ -7,15 +7,6 @@ export default function Section1() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  const images = [
-    { url: "/Image/room-1.jpg" },
-    { url: "/Image/room-2.jpg" },
-    { url: "/Image/room-3.jpg" },
-    { url: "/Image/room-4.jpg" },
-    { url: "/Image/room-5.jpg" },
-    { url: "/Image/room-6.jpg" },
-    { url: "/Image/room-7.jpg" },
-  ];
   return (
     <div className="   p-4 lg:p-0 lg:bg-all">
       <section className="min-h-0 mt-10 bg-all p-4">
@@ -55,36 +46,8 @@ export default function Section1() {
               className="hidden lg:block"
             >
               {" "}
-              <SimpleImageSlider
-                width={896}
-                height={504}
-                images={images}
-                showBullets={true}
-                showNavs={true}
-                navSize={20}
-                useGPURender={true}
-                autoPlay={true}
-                loop={true}
-                slideDuration="1.2"
-                autoPlayDelay="2"
-              />
             </div>
-            <div className=" block lg:hidden">
-              {" "}
-              <SimpleImageSlider
-                width={320}
-                height={180}
-                images={images}
-                showBullets={true}
-                useGPURender={true}
-                showNavs={true}
-                navSize={20}
-                autoPlay={true}
-                loop={true}
-                slideDuration="1.2"
-                autoPlayDelay="2"
-              />
-            </div>
+            <div className=" block lg:hidden"></div>
           </div>
         </div>
       </section>
