@@ -8,7 +8,7 @@ export default function Googlemap() {
       <div className="mx-auto max-w-max">
         <div className="">
           <div className="font-head text-center font-extrabold">
-            <a data-aos="fade-up" data-aos-duration="2500" className="text-sim" >
+            <a data-aos="fade-up" data-aos-duration="2500" className="text-sim">
               <div className="">
                 <button
                   className={
@@ -23,7 +23,7 @@ export default function Googlemap() {
                   href="#link1"
                   role="tablist"
                 >
-                  L O C A T I O N{" "}
+                  G R A P H I C M A P{" "}
                 </button>
                 <button
                   className={
@@ -56,7 +56,7 @@ export default function Googlemap() {
           </div>
           <div className={openTab === 2 ? "block" : "hidden"} id="link2">
             <div data-aos="fade-up" data-aos-duration="1000">
-              <Image src="/Image/room-7.jpg" width={1024} height={576}/>
+              <Image src="/Image/room-7.jpg" width={1024} height={576} />
             </div>
           </div>
         </div>

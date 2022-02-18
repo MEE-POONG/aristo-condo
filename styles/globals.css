@@ -146,9 +146,7 @@ a {
 .bg-tabs {
   background-color: #001a46;
 }
-.bg-tel {
-  background-color: #d2ccbd;
-}
+
 .hot {
   text-align: -webkit-center;
 }
@@ -167,11 +165,22 @@ a {
 }
 @media screen and (max-width: 600px) {
   .us {
-    font-size: large;
+    font-size: 12px;
   }
 }
 .bg-all {
-  background-color: #f3f5f3;
+  background-image: url(/Image/white.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
+}
+.bg-earth {
+  background-image: url(/Image/etone-01-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100%;
 }
 text-kim {
   color: #595859;
@@ -234,7 +243,7 @@ text-kim {
 }
 @media screen and (max-width: 600px) {
   .wow {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 .bg-concept {
@@ -384,6 +393,21 @@ text-kim {
   letter-spacing: 3px;
   font-size: 30px;
 }
+@media screen and (max-width: 600px) {
+  .font-con {
+
+    font-size: 25px;
+  }
+  .font-con-sub2 {
+    font-size: 13px;
+  }
+  .font-con-sub {
+    font-size: 15px;
+  }
+  .font-signature {
+    font-size: 16x;
+  }
+}
 .font-con-sub2 {
   font-family: "Noto Serif Display", serif;
   letter-spacing: 1.5px;
@@ -391,9 +415,10 @@ text-kim {
 }
 
 .font-con-sub {
-  font-family: "Noto Serif Display", serif;
+
   letter-spacing: 3px;
 }
+
 .font-signature {
   font-family: "Great Vibes", cursive;
 }
@@ -407,6 +432,67 @@ text-kim {
 }
 @media screen and (max-width: 600px) {
   .bg-lux {
-    height: 25vh;
+    height: 12vh;
+    background-size: auto;
+  }
+}
+
+.font-well {
+  font-family: "Noto Serif Display", serif;
+
+  font-size: 30px;
+  color: #616061;
+}
+
+@media screen and (max-width: 600px) {
+  .font-well {
+    font-size: 10px;
+  }
+}
+.line {
+  background-color: #7c7166;
+}
+.font-wellsub {
+  font-family: "Noto Serif Display", serif;
+  font-size: 20px;
+  color: #6d6d6d;
+}
+
+@media screen and (max-width: 600px) {
+  .font-wellsub {
+    font-size: 8px;
+  }
+}
+
+.font-wellsub2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 20px;
+  color: #7b7c7b;
+}
+
+@media screen and (max-width: 600px) {
+  .font-wellsub2 {
+    font-size: 8px;
+  }
+}
+.img-head{
+  font-family: "Noto Serif Display", serif;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: #646465;
+}
+.font-subimg{
+  font-family: tahoma, arial, helvetica;
+  letter-spacing: 1px;
+  color: #6B6A6B;
+}
+@media screen and (max-width: 600px) {
+  .img-head{
+   
+    font-size: 23px;
+   
+  }
+  .font-subimg{
+    font-size: 14px;
   }
 }

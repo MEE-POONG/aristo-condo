@@ -12,7 +12,7 @@ function Footer() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <footer className="min-h-0 bg-tel">
+    <footer className="min-h-0 bg-earth">
       <div className="py-6 mx-auto max-w-xs lg:max-w-7xl">
         <div
           data-aos="zoom-in"
