@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import Progess from "../components/progess";
 import Googlemap from "../components/googlemap";
 import Concept from "../components/concept";
+import Condo from "../components/condo";
 export default function Index() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -23,6 +24,7 @@ export default function Index() {
       <Banner />
       <Concept/>
       <Section1 />
+      <Condo/>
       <Section3 />
       <Section2 />
       <Googlemap />

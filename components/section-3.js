@@ -8,7 +8,7 @@ export default function Section3() {
 
   return (
     <div>
-      <section className="  min-h-0  pt-3 lg:pt-6  pb-6">
+      <section className="  min-h-0  pt-3 lg:pt-6  pb-6 mt-0 lg:mt-12 ">
         <div className="font-head text-center uppercase font-extrabold  m-2">
           <span className="text-gold mr-2 lg:mr-8 my-12 ">P L A N S</span>
           {/* <span className="text-gold shadow-lg"> P L A N S </span> */}
