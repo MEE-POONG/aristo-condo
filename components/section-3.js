@@ -3,9 +3,9 @@ import Image from "next/image";
 import SimpleImageSlider from "react-simple-image-slider";
 
 const roomtypelist = [
-  { id: 1, value: "type1", imgs: "/Image/room-1.jpg" },
-  { id: 2, value: "type2", imgs: "/Image/room-2.jpg" },
-  { id: 3, imgs: "/Image/room-3.jpg" },
+  { id: 1, imgs: "/Image/room-1.jpg" },
+  { id: 2, imgs: "/Image/room-2.jpg" },
+  { id: 3, imgs: "/Image/room-7.jpg" },
   { id: 4, imgs: "/Image/room-4.jpg" },
   { id: 5, imgs: "/Image/room-5.jpg" },
   { id: 6, imgs: "/Image/room-6.jpg" },
@@ -14,7 +14,7 @@ const roomtypelist = [
 
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
-  const [selectRoom, setSelectRoom] = useState('/Image/room-1.jpg');
+  const [selectRoom, setSelectRoom] = useState("/Image/room-1.jpg");
 
   console.log(selectRoom);
 
@@ -101,29 +101,28 @@ export default function Section3() {
               <div className="grid grid-cols-1  gap-6  mx-auto max-w-xs lg:max-w-screen-xl place-items-center   ">
                 <div className="col-span-1 mt-4 lg:mt-0">
                   <div className="border-2 w-auto bg-white z-10 absolute right-56 m-2">
-                    <select onChange={(e) => {
-                      setSelectRoom(e.target.value);
-                    }}>
-                    {roomtypelist?.map((room=>(
-                      <option key={room} value={room.imgs}>room type {room.id}</option>
-                      )))}
+                    <select
+                      onChange={(e) => {
+                        setSelectRoom(e.target.value);
+                      }}
+                    >
+                      {roomtypelist?.map((room) => (
+                        <option key={room} value={room.imgs}>
+                          room type {room.id}
+                        </option>
+                      ))}
                     </select>
                   </div>
-                  <div >
+                  <div>
                     <div
                       data-aos="fade-up"
                       data-aos-duration="3800"
                       className="hidden lg:block"
                     >
                       {/* {selectRoom} */}
-                      <Image
-                        src={selectRoom}
-                        width={950}
-                        height={576}
-                      />
+                      <Image src={selectRoom} width={950} height={576} />
                     </div>
                   </div>
-                  
                 </div>
               </div>
             </div>
