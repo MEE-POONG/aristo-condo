@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-<<<<<<< Updated upstream
-=======
 import SimpleImageSlider from "react-simple-image-slider";
 
 const roomtypelist = [
@@ -14,7 +12,6 @@ const roomtypelist = [
   { id: 7, imgs: "/Image/room-7.jpg" },
 ];
 
->>>>>>> Stashed changes
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
   const [selectRoom, setSelectRoom] = useState('/Image/room-1.jpg');
