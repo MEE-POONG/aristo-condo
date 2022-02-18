@@ -1,10 +1,22 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import SimpleImageSlider from "react-simple-image-slider";
+
+const roomtypelist = [
+  { id: 1, imgs: "/Image/room-1.jpg" },
+  { id: 2, imgs: "/Image/room-2.jpg" },
+  { id: 3, imgs: "/Image/room-7.jpg" },
+  { id: 4, imgs: "/Image/room-4.jpg" },
+  { id: 5, imgs: "/Image/room-5.jpg" },
+  { id: 6, imgs: "/Image/room-6.jpg" },
+  { id: 7, imgs: "/Image/room-7.jpg" },
+];
+
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
-  const [selectRoom, setSelectRoom] = useState();
+  const [selectRoom, setSelectRoom] = useState("/Image/room-1.jpg");
 
-  // console.log(selectRoom);
+  console.log(selectRoom);
 
   return (
     <div>
@@ -89,22 +101,26 @@ export default function Section3() {
               <div className="grid grid-cols-1  gap-6  mx-auto max-w-xs lg:max-w-screen-xl place-items-center   ">
                 <div className="col-span-1 mt-4 lg:mt-0">
                   <div className="border-2 w-auto bg-white z-10 absolute right-56 m-2">
-                    <select className="">
-                      <option>room type 1</option>
-                      <option>room type 2</option>
-                      <option>room type 3</option>
-                      <option>room type 4</option>
-                      <option>room type 5</option>
+                    <select
+                      onChange={(e) => {
+                        setSelectRoom(e.target.value);
+                      }}
+                    >
+                      {roomtypelist?.map((room) => (
+                        <option key={room} value={room.imgs}>
+                          room type {room.id}
+                        </option>
+                      ))}
                     </select>
                   </div>
-
-                  <div className={selectRoom === 1} id="room1">
+                  <div>
                     <div
                       data-aos="fade-up"
                       data-aos-duration="3800"
                       className="hidden lg:block"
                     >
-                      <Image src="/Image/room-8.jpg" width={950} height={576} />
+                      {/* {selectRoom} */}
+                      <Image src={selectRoom} width={950} height={576} />
                     </div>
                   </div>
                 </div>

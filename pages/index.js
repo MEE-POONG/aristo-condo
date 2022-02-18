@@ -29,6 +29,8 @@ export default function Index() {
       <Section2 />
       <Googlemap />
 
+      
+
       <Progess />
       <Footer />
     </div>
