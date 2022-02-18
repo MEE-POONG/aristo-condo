@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import SimpleImageSlider from "react-simple-image-slider";
+
 
 const roomtypelist = [
   { id: 1, imgs: "/Image/room-1.jpg" },
@@ -12,9 +12,20 @@ const roomtypelist = [
   { id: 7, imgs: "/Image/room-7.jpg" },
 ];
 
+const planlist = [
+  { id: 1, imgs: "/Image/room-10.jpg" },
+  { id: 2, imgs: "/Image/room-11.jpg" },
+  { id: 3, imgs: "/Image/room-12.jpg" },
+  { id: 4, imgs: "/Image/room-13.jpg" },
+  { id: 5, imgs: "/Image/room-14.jpg" },
+  { id: 6, imgs: "/Image/room-15.jpg" },
+  { id: 7, imgs: "/Image/room-16.jpg" },
+];
+
 export default function Section3() {
   const [openTab, setOpenTab] = useState(1);
   const [selectRoom, setSelectRoom] = useState("/Image/room-1.jpg");
+  const [selectPlan, setSelectPlan] = useState("/Image/room-10.jpg");
 
   console.log(selectRoom);
 
@@ -46,7 +57,7 @@ export default function Section3() {
                     href="#link1"
                     role="tablist"
                   >
-                    <div className="uppercase text-xs lg:text-xl">1 ROOM</div>
+                    <div className="uppercase text-xs lg:text-xl"> Plan</div>
 
                     <div className="uppercase text-xs hidden lg:block mt-0 lg:mt-4">
                       SEE MORE
@@ -68,7 +79,7 @@ export default function Section3() {
                     role="tablist"
                   >
                     <div className="uppercase text-xs lg:text-xl">
-                      1 ROOM + POOL
+                      Room
                     </div>
                     <div className="uppercase text-xs hidden lg:block mt-4">
                       <span className="ml-2"> SEE MORE</span>
@@ -82,17 +93,30 @@ export default function Section3() {
             <div className={openTab === 1 ? "block" : "hidden"} id="link1">
               <div className="grid grid-cols-1  gap-6  mx-auto max-w-xs lg:max-w-screen-xl place-items-center   ">
                 <div className="col-span-1 mt-4 lg:mt-0    ">
-                  <div
-                    data-aos="fade-up"
-                    data-aos-duration="3800"
-                    className="hidden lg:block"
-                  >
-                    {" "}
-                    <Image src="/Image/room-6.jpg" width={950} height={576} />
+                <div  data-aos="fade-up"
+                      data-aos-duration="3800"
+                      className="bg-all w-auto  z-10 absolute  ">
+                    <select className="shadow-lg p-2 lg:w-52 w-32 text-center"
+                      onChange={(e) => {
+                        setSelectPlan(e.target.value);
+                      }}
+                    >
+                      {planlist?.map((plan) => (
+                        <option key={plan} value={plan.imgs}>
+                          Plan {plan.id}
+                        </option>
+                      ))}
+                    </select >
                   </div>
-                  <div className=" block lg:hidden">
-                    {" "}
-                    <Image src="/Image/room-6.jpg" width={950} height={576} />
+                  <div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="3800"
+                     
+                    >
+                      {/* {selectRoom} */}
+                      <Image src={selectPlan} width={950} height={576} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -100,15 +124,17 @@ export default function Section3() {
             <div className={openTab === 2 ? "block" : "hidden"} id="link2">
               <div className="grid grid-cols-1  gap-6  mx-auto max-w-xs lg:max-w-screen-xl place-items-center   ">
                 <div className="col-span-1 mt-4 lg:mt-0">
-                  <div className="border-2 w-auto bg-white z-10 absolute right-56 m-2">
-                    <select
+                 <div  data-aos="fade-up"
+                      data-aos-duration="3800"
+                      className="bg-all w-auto  z-10 absolute  ">
+                    <select className="shadow-lg p-2 w-32  lg:w-52  text-center"
                       onChange={(e) => {
                         setSelectRoom(e.target.value);
                       }}
                     >
                       {roomtypelist?.map((room) => (
                         <option key={room} value={room.imgs}>
-                          room type {room.id}
+                          Room {room.id}
                         </option>
                       ))}
                     </select>
@@ -117,7 +143,7 @@ export default function Section3() {
                     <div
                       data-aos="fade-up"
                       data-aos-duration="3800"
-                      className="hidden lg:block"
+                     
                     >
                       {/* {selectRoom} */}
                       <Image src={selectRoom} width={950} height={576} />

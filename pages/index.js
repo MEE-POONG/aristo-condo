@@ -22,14 +22,12 @@ export default function Index() {
         <Header />
       </div>
       <Banner />
-      <Concept/>
+      <Concept />
+      <Condo />
       <Section1 />
-      <Condo/>
       <Section3 />
       <Section2 />
       <Googlemap />
-
-      
 
       <Progess />
       <Footer />
