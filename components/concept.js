@@ -10,7 +10,7 @@ export default function Concept() {
         />
    
       </video> */}
-      <div className="video">
+      <div  id="home" className="video">
         <div className="absolute left-0 right-0 text-center top-36 lg:top-60 ">
           <div className="wow font-bold  py-12">
             <span className="text-white">GOOD </span>

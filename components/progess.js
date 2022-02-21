@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Progess() {
   return (
-    <div className="min-h-0 bg-all mt-24 ">
+    <div id="progess" className="min-h-0 bg-all mt-24 ">
       <div className="relative wow">
         <div className="banner-progess py-12">
           <div className="mx-auto max-w-xs lg:max-w-7xl">

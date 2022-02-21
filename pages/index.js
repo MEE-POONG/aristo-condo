@@ -11,7 +11,8 @@ import Googlemap from "../components/googlemap";
 import Concept from "../components/concept";
 import Condo from "../components/condo";
 import Gallery from "../components/Gallery";
-import Map from "../components/map";
+import Nearby from "../components/Nearby";
+
 export default function Index() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -28,7 +29,7 @@ export default function Index() {
       <Section3 />
       <Section2 />
       <Googlemap />
-      <Map/>
+      <Nearby/>
       <Gallery/>
      
       <Progess />

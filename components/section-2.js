@@ -14,7 +14,7 @@ export default function Section2() {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
-      <section className="mt-12 lg:mt-24 min-h-0 pb-8 lg:pb-20  ">
+      <section id="ament" className="mt-12 lg:mt-24 min-h-0 pb-8 lg:pb-20  ">
         <div className="font-head text-center uppercase font-extrabold  m-2  ">
           <span
             data-aos="fade-up"
