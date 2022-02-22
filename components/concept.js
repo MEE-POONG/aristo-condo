@@ -18,7 +18,7 @@ export default function Concept() {
           </div>
           <div className="text-white us uppercase">
             <span className="text-yellow-500">"</span>{" "}
-            <span>A PERFECT life in paradise</span>{" "}
+            <span>Bellettini Condotel & Wellness</span>{" "}
             <span className="text-yellow-500">"</span>
           </div>
         </div>

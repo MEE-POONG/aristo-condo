@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Nearby() {
   return (
-    <div className="tab-content tab-space mt-6 text-sm lg:text-xl text-sim tracking-wide">
+    <div className="tab-content tab-space text-sm lg:text-xl text-sim tracking-wide mt-12">
       <div className="mx-auto max-w-max lg:max-w-screen-xl">
         <div className="text-sim font-bold uppercase my-4 ">nearby place</div>
         <div className="grid grid-cols-12 gap-8 lg:grid-cols-12 text-center">

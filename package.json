@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.24",
     "@ramonak/react-progress-bar": "^4.4.0",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.1.3",

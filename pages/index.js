@@ -1,18 +1,17 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Section1 from "../components/section-1";
 import Section2 from "../components/section-2";
 import Section3 from "../components/section-3";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import Progess from "../components/progess";
 import Googlemap from "../components/googlemap";
 import Concept from "../components/concept";
 import Condo from "../components/condo";
 import Gallery from "../components/Gallery";
 import Nearby from "../components/Nearby";
-
 export default function Index() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -29,9 +28,8 @@ export default function Index() {
       <Section3 />
       <Section2 />
       <Googlemap />
-      <Nearby/>
-      <Gallery/>
-     
+      <Nearby />
+      <Gallery />
       <Progess />
       <Footer />
     </div>

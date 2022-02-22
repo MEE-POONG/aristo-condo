@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 export default function Googlemap() {
   const [openTab, setOpenTab] = useState();
   return (
     <div>
-      <div id="maps"className="mx-auto max-w-max">
+      <div id="maps" className="mx-auto max-w-max">
         <div className="">
           <div className="font-head text-center font-extrabold">
             <a data-aos="fade-up" data-aos-duration="2500" className="text-sim">
@@ -56,7 +57,13 @@ export default function Googlemap() {
           </div>
           <div className={openTab === 2 ? "block" : "hidden"} id="link2">
             <div data-aos="fade-up" data-aos-duration="1000">
-              <Image src="/Image/room-7.jpg" width={1024} height={576} />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15810.01982861464!2d98.2994251521303!3d7.842098900449097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd88f0c160e2e041a!2sThe%20Aristo%20Condo%20Karon%20Beach!5e0!3m2!1sth!2sth!4v1645518461863!5m2!1sth!2sth"
+                width="600"
+                height="450"
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
