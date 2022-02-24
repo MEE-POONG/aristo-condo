@@ -31,44 +31,44 @@ export default function Concept() {
           </div>
           <div className=" text-center uppercase text-foot text-l font-con-sub">
             {" "}
-            Lorem Ipsum is simply dummy text .
+            Following an informal introduction we were invited to develop a Concept Design 
           </div>
           <div className=" text-center uppercase text-foot text-l font-con-sub">
             {" "}
-            The industry's standard dummy text .
+            for a condo building on this very awkward,
           </div>
           <div className=" text-center uppercase text-foot text-l font-con-sub">
             {" "}
-            Contrary to popular belief, Lorem Ipsum is not simply .
+            and irregular, triangular site, a challenge we welcomed.
           </div>
           <div className=" text-center uppercase text-foot text-l font-con-sub">
             {" "}
-            There are many variations of passages of Lorem .
+            {/* There are many variations of passages of Lorem . */}
           </div>
           <div className=" text-center font-bold text-foot pt-12 text-md  font-con-sub2">
             {" "}
-            It is a long established fact that a reader{" "}
+            The Brief was quite simple and included only the number and size of the units desired, 
           </div>
           <div className=" text-center font-bold text-foot text-md  font-con-sub2">
             {" "}
-            The point of using Lorem Ipsum{" "}
+            as well as the shared facilities for the residents. 
           </div>
           <div className=" text-center font-bold text-foot text-md  font-con-sub2">
             {" "}
-            Many desktop publishing packages{" "}
+            We were also provided with local regulations regarding setbacks, 
           </div>
           <div className=" text-center font-bold text-foot text-md  font-con-sub2">
             {" "}
-            Various versions have evolved over the years,{" "}
+            green areas, fire safety requirements etc.
           </div>
           <div className=" text-center font-bold text-foot text-md  font-con-sub2">
             {" "}
-            sometimes by accident, sometimes on purpose .
+            The design was left entirely to us, the client correctly wishing to test our creativity. 
           </div>
 
           <div className=" text-center  text-foot pt-12 text-md font-signature">
             {" "}
-            Lorem Ipsum.
+            Good View.
           </div>
         </div>
       </div>

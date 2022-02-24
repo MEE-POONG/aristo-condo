@@ -19,22 +19,24 @@ export default function Condo() {
             <Image src="/Image/room-21.jpg" width={900} height={600} />
           </div>
           <div className="col-span-5 text-center font-well">
-            A Warm Welcome
+            WHAT ARE THE PROBLEMS/CONSTRAINTS AND HOW DID YOU OVERCOME THE
+            CHALLENGE?
             <div
               data-aos="zoom-in"
               data-aos-duration="1000"
               className="mx-auto w-1/2 lg:max-w-4xl  line h-0.5 my-1"
             ></div>
             <div className="font-wellsub text-left my-6">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled
+              This tight, triangular site caused obvious difficulties and the
+              solutions had to be genuinely ‘bespoke’. No copy-and-paste, just
+              thoughtful, careful and considered creativity. Not an easy
+              project, but we hope that our Concept Design positively surprised
+              the Client.
             </div>
             <div className="font-wellsub2 text-left">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum
+              The recessed elevator core and high-level areas are clad with
+              manufactured timber which is lightweight and mould/climate
+              resistant. It can be made in a variety of wood tones/colours
             </div>
           </div>
         </div>
@@ -48,15 +50,17 @@ export default function Condo() {
               className="mx-auto w-1/2 lg:max-w-4xl  line h-0.5 my-1"
             ></div>
             <div className="font-wellsub text-right my-6">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled
+              The extensive glazed areas on the ground floor areas give the
+              whole building a floating effect. The high lobby (7m) has a
+              covered drop-off area for both private cars and taxis. Reception,
+              Lobby-Lounge, Mailboxes and a generous Parcel Room are all
+              conveniently located
             </div>
             <div className="font-wellsub2 text-right">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum
+              One wall of the Entrance Lobby features a 7 metre water cascade.
+              The two towers are clad in different materials. One in a
+              brise-soleil, the other with a dark grey stone with dramatic white
+              vein markings.
             </div>
           </div>
           <div className="col-span-7 text-right">
